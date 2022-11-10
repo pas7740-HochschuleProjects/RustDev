@@ -1,10 +1,11 @@
 fn main() {
-    let mut num = 5;
-    num = double_value(num);
-    println!("Number is: {num}");
+    let p1 = Person{name: "Pascal".to_string(), age: 19};
 }
 
-fn double_value(x:i8)->i8{
-    let y = x*2;
-    return y;
+struct Person{
+    name: String,
+    age : i8
+}
+
+impl Person{
 }
